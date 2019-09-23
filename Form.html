@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>StudentForms</title>
+ </head>
+ <body bgcolor = "pink">
+<h1 align = "center"> <i><u>Student Registration Form</u></i></h1>
+
+	<form action="file:///E:/Practice/HTML/FormSuccess.html" method = "POST" >	
+
+	<table  cellspacing = "10">
+		<tr><td><b>Name :</b></td><td>
+			<input type="text" name= "nme"placeholder = "Enter your name">
+		</td></tr>
+
+		<tr><td><b>University Roll No. :</b></td><td>
+			<input type="text" name= "roll" placeholder = "Enter your Roll">
+		</td></tr>
+
+		<tr><td><b>Email :</b></td><td>
+			<input type="text" name = "mail" placeholder = "Enter your Email">
+		</td></tr>
+
+		<tr><td><b>Mobile:</b></td><td>
+			<input type="text" name = "mob" placeholder = "Enter your Phone number with country code">
+		</td></tr>
+
+		<tr><td><b>DOB :</b></td><td>
+			<input type="date" name = "dob" placeholder = "Enter your DOB">
+		</td></tr>
+
+		<tr><td><b>gender :</b></td><td>
+			<input type="radio" name = "gdr" value = "Male"> Male
+			<input type="radio" name = "gdr" value = "Female"> Female
+					<input type="radio" name = "gdr" value = "Trans"> Transgender
+		</td></tr>
+
+		<tr><td><b>Select Free Service :</b></td><td>
+				<select name="serv" >
+					<option value="NewsPaper"> NewsPaper </option>
+					<option value="RoomCleaning"> RoomCleaning </option>
+					<option value="MealsBooking"> MealsBooking </option>
+					<option value="WifiPassword"> WifiPassword </option>
+				</select>
+		</td></tr>
+
+		<b>The information given below is best of my knowledge. </b>
+			<input type="checkbox" name = "yes" value >YES
+			<input type="checkbox" name = "no" >NO
+
+		
+
+		<tr align = "center"><td colspan = "3">
+			<input type="submit" name = "sub">
+		</td></tr>
+		</table>
+		</form>
+
+  
+ </body>
+</html>
