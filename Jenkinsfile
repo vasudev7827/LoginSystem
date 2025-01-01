@@ -10,7 +10,7 @@ pipeline{
     stage("First Parallel Stage"){
 	 steps{
 	  sh """
-	   echo "First Parallel Stage Process.."
+	   echo "First Parallel Stage Process"
 	  """
 	 }
 	}
@@ -37,18 +37,11 @@ pipeline{
 	 echo ${env.BUILD_NUMBER}
 	"""
    }
-  stage("Fourth Stage"){
-   steps{
-    sh """
-	 echo "Fourth Stage Process"
-	 echo ${env.BUILD_NUMBER}
-	"""
-   }
   }
  }
  post{
   always{
-   echo "Build Process completed."
+   echo "Build Creation Completed"
   }
   success{
    echo "Build Creation Successful"
