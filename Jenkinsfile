@@ -37,6 +37,13 @@ pipeline{
 	 echo ${env.BUILD_NUMBER}
 	"""
    }
+  stage("Fourth Stage"){
+   steps{
+    sh """
+	 echo "Fourth Stage Process"
+	 echo ${env.BUILD_NUMBER}
+	"""
+   }
   }
  }
  post{
