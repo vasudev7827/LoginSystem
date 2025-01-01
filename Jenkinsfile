@@ -10,7 +10,7 @@ pipeline{
     stage("First Parallel Stage"){
 	 steps{
 	  sh """
-	   echo "First Parallel Stage Process."
+	   echo "First Parallel Stage Process.."
 	  """
 	 }
 	}
