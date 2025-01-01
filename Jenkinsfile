@@ -41,7 +41,7 @@ pipeline{
  }
  post{
   always{
-   slackSend(color: '#FFFF00', message: "BUILD ${env.BUILD_NUMBER}: Job ${env.JOB_NAME} ended. ${env.BUILD_URL} ")
+   echo "Build Process completed."
   }
   success{
    echo "Build Creation Successful"
